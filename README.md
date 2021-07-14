@@ -5,12 +5,12 @@ This is a simple CLI to be runned on termux to serve a web server on your mobile
 
 I know... I know... there are a lot of options out there to do the same. But this one is 100% free, easy and it's on your phone!
 
-<!--## Dependencies
+## Dependencies
 
 * [termux](https://termux.com/)
 * Python3
 
-## Installation 
+<!--## Installation 
 <blockquote>I have plans to automate this whole process in a shell script.</blockquote>
 
 1. Clone this repo on your android device.
@@ -23,10 +23,26 @@ I know... I know... there are a lot of options out there to do the same. But thi
 
         alias hsdt='python3 ~/mobile_dev_server/run.py'
 
-5. It's Ready!
+5. It's Ready! To make sure it's running all good, try to run the server in any port an access the "/welcome" page. 
 
-## Commands
+## Commands and Usage
+All the commands are optionals. 
 
+        usage: run.py [-h] [--open OPEN] [--port PORT] [--page PAGE]
+
+        A Mobile Webserver for development purposes.
+
+        optional arguments:
+          -h, --help            show this help message and exit
+          --open OPEN, -o OPEN  If you want to host on 0.0.0.0
+          --port PORT           The port where webserver would run
+          --page PAGE, -p PAGE  The page to be rendered
+
+Default host is localhost (127.0.0.1) and default port is 5001. 
+
+In order to run an html page, you just need to place it in the server directory and run the cli with the "--page" option or simply "-p". This server can handle Jinja2 templates and if you need to run static files, place them in the "/static" directory inside the server folder.
+
+This server also generates log files named by the date time it runs.
 ## F.A.Q.
 ### 1. Can I run this on my Iphone?
 No, because termux runs on android only. But if you are able to find a way, please let me know. 
