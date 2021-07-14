@@ -3,16 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-5.0.2-dist/css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-5.0.2-dist/css/bootstrap.css.map') }}">
+  <link rel="icon" href="{{url_for('static', filename='skeleton.png')}}">
 	<title>Welcome Page</title>
 </head>
-<body>
+<body style='background:#99bbcc'>
         <center>
-	<h1>Welcome to Mobile Home Server DevTool!</h1>
+	<h1>Welcome to Skeleton Home Server DevTool!</h1>
+  <img src="{{url_for('static', filename='skeleton.png')}}"   alt="logo">
 	<p>Thank you very much for using this tool in your development process! I hope you like to use this as much as a like to develop it.</p>
 	<p>By the way <b>if you are seeing this page, CONGRATULATIONS the server is running all good!</b></p>
 	<p>If you run in any kind of bug or hard time with this application, you can check the <a href="https://github.com/AlmirPaulo/Mobile_Home_Server_DevTool">documentation</a> or post an <a href="https://github.com/AlmirPaulo/Mobile_Home_Server_DevTool/issues">issue</a>.</p>
 	<p>Thank you again and good code!</p>
 	<a href="https://github.com/AlmirPaulo"><i>Almir Paulo</i></a>
 </body>
+<div class="text-muted">
+<div>Icons made by <a href="https://www.flaticon.com/authors/dimitry-miroliubov" title="Dimitry Miroliubov">Dimitry Miroliubov</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
 </center>
 </html>

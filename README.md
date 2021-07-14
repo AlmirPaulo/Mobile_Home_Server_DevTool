@@ -1,29 +1,50 @@
-# Mobile Home Server DevTool
+# Skeleton Server DevTool
 *A project by  [Almir Paulo](https://github.com/AlmirPaulo)*
 
-This is a simple CLI to be runned on termux to serve a web server on your mobile device. This web server is not intended to be a production server, but a development one. The idea is to help developers to test and share their applications with their team partners or even with someone who have hired you for a job and wants to take a look at their product.
+This is a simple CLI to serve a basic web server. This web server is not intended to be a production server, but a development one. The idea is to help developers to test and share their applications with their team partners or even with someone who have hired you for a job and wants to take a look at their product.
 
-I know... I know... there are a lot of options out there to do the same. But this one is 100% free, easy and it's on your phone!
+I know... I know... there are a lot of options out there to do the same. But this one is 100% free, easy and has a lot of features you may like.
+
+<!--## Features
+
+* Deploy of a single page. (Ideally, a temporary deploy)
+* SQL database included (SQLite3 by default, but you can easily change it).
+* Jinja2
+* Bootstrap 5 locally installed, to make your Frontend life easier.
+* For advanced usage (like APIs or authentication), you can paste your own backend features on the "myapp.py" file.
 
 ## Dependencies
 
-* [termux](https://termux.com/)
 * Python3
+* Flask
+* Flask-SQLAlchemy
 
-<!--## Installation 
+## Installation 
 <blockquote>I have plans to automate this whole process in a shell script.</blockquote>
 
-1. Clone this repo on your android device.
-2. Install Termux on your android device.
-3. Install python3 via termux
+1. Clone this repo.
+2. Make sure you have Python3 installed
+3. Create a virtual environment.
+    
+        python3 -m venv venv
 
-        pkg install python3
+4. Activate the virtual environment and install the requirements.
 
-4. Paste this line on your termux .bashrc. If you have not a .bashrc file, create it. The following line just create an alias. 
+        source venv/bin/activate
 
-        alias hsdt='python3 ~/mobile_dev_server/run.py'
+        pip install -r requirements.txt
 
-5. It's Ready! To make sure it's running all good, try to run the server in any port an access the "/welcome" page. 
+<blockquote>If you have pipenv installed you can of course use the pipenv way of install the requirements instead of steps 4 and 5.</blockquote>
+
+5. Paste this line on your .bashrc. If you have not a .bashrc file, create it. The following line just create an alias. You can do this with a text editor like "nano" or "vim", or just use "touch" and "echo" commands.
+
+        alias sdst='python3 ~/skeleton_dev_server/run.py'
+
+6. It's Ready! To make sure it's running all good, simply run:
+
+        sdst  
+
+You should see the welcome page at 127.0.0.1:5001.
 
 ## Commands and Usage
 All the commands are optionals. 
@@ -42,7 +63,7 @@ Default host is localhost (127.0.0.1) and default port is 5001.
 
 In order to run an html page, you just need to place it in the server directory and run the cli with the "--page" option or simply "-p". This server can handle Jinja2 templates and if you need to run static files, place them in the "/static" directory inside the server folder.
 
-This server also generates log files named by the date time it runs.
+
 ## F.A.Q.
 ### 1. Can I run this on my Iphone?
 No, because termux runs on android only. But if you are able to find a way, please let me know. 
@@ -59,5 +80,11 @@ Fork it!
 Tell people about it! 
 Buy me a coffee!
 
-### 5. Would be easier if we could install it directly from pip or pkg...
-Maybe in the future... 
+## Plans for the future
+
+* Installation via pip
+* Shell script for installation
+* Include Redis
+* Command for save logs
+* Configure a database panel interface.
+* Make it available for Android 
