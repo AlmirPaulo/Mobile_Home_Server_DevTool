@@ -1,3 +1,4 @@
-from mobile_dev_server import views, control, app
+from mobile_dev_server import main
 
-if __name__ == '__main__':  app.run(debug=True, port=control.choose_port(control.args.port))
+if __name__ == '__main__':  
+   main.app.run(debug=True, port=main.choose_port(main.args.port), host=main.choose_host(main.args.host))
