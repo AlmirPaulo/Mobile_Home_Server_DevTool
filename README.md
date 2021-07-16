@@ -1,5 +1,7 @@
-# Skeleton Server DevTool
+# Skeleton Home Server DevTool
 *A project by  [Almir Paulo](https://github.com/AlmirPaulo)*
+
+![logo](https://raw.githubusercontent.com/AlmirPaulo/Mobile_Home_Server_DevTool/main/static/skeleton.png)
 
 This is a simple CLI to serve a basic web server. This web server is not intended to be a production server, but a development one. The idea is to help developers to test and share their applications with their team partners or even with someone who have hired you for a job and wants to take a look at their product.
 
@@ -11,16 +13,18 @@ I know... I know... there are a lot of options out there to do the same. But thi
 * SQL database included (SQLite3 by default, but you can easily change it).
 * Jinja2
 * Bootstrap 5 locally installed, to make your Frontend life easier.
-* For advanced usage (like APIs or authentication), you can paste your own backend features on the "myapp.py" file.
+* For advanced usage (like APIs, authentication, etc), you can paste your own backend features on the "myapp.py" file.
+*A tests file for TDD lovers.
 
 ## Dependencies
 
 * Python3
 * Flask
 * Flask-SQLAlchemy
+* Pytest
 
 ## Installation 
-<blockquote>I have plans to automate this whole process in a shell script.</blockquote>
+> I have plans to automate this whole process in a shell script.
 
 1. Clone this repo.
 2. Make sure you have Python3 installed
@@ -34,7 +38,7 @@ I know... I know... there are a lot of options out there to do the same. But thi
 
         pip install -r requirements.txt
 
-<blockquote>If you have pipenv installed you can of course use the pipenv way of install the requirements instead of steps 4 and 5.</blockquote>
+> If you have pipenv installed you can of course use the pipenv way of install the requirements instead of steps 4 and 5.
 
 5. Paste this line on your .bashrc. If you have not a .bashrc file, create it. The following line just create an alias. You can do this with a text editor like "nano" or "vim", or just use "touch" and "echo" commands.
 
@@ -65,16 +69,13 @@ In order to run an html page, you just need to place it in the server directory 
 
 
 ## F.A.Q.
-### 1. Can I run this on my Iphone?
-No, because termux runs on android only. But if you are able to find a way, please let me know. 
-
-### 2. Can I run this on desktop via command line?
+### 1. Can I run this on desktop via command line?
 If you have Python installed, yes, but why would you do this?
 
-### 3. I think I found a bug!/I need help! 
+### 2. I think I found a bug!/I need help! 
 Please, open an Issue here on Github. 
 
-### 4. How can I contribute to the project?
+### 3. How can I contribute to the project?
 Pull request me!
 Fork it!
 Tell people about it! 
@@ -88,3 +89,7 @@ Buy me a coffee!
 * Command for save logs
 * Configure a database panel interface.
 * Make it available for Android 
+
+## Releases
+
+### 0.0.0

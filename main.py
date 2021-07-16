@@ -1,7 +1,10 @@
 from flask import Flask, render_template
-import  argparse
+from flask_sqlalchemy import SQLAlchemy
+import argparse
 
 app = Flask(__name__, template_folder='.')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+skeleton_db = SQLAlchemy(app)
 
 #CLI
 parser = argparse.ArgumentParser(description='A Mobile Webserver for development purposes.')
