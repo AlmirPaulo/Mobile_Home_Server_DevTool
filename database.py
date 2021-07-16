@@ -1,4 +1,4 @@
-from main import parser, skeleton_db, app
+from main import parser, skeleton_db
 import os
 
 
@@ -32,10 +32,6 @@ def delete():
 
 def create_db():
     if os.path.exists('./db.sqlite3') == False:
-        try:
-            skeleton_db.create_all() 
-            app.logger.info('Skeleton Database created!')
-        except:
-            app.logger.warning('Skeleton Database could NOT be created!')
+        skeleton_db.create_all() 
 
 create_db()
