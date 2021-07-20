@@ -23,14 +23,8 @@ def choose_host(open):
     else:
         return '127.0.0.1'
 
-
-def render_page(page):
-    return render_template(page)
-
-
 @app.route('/')
 def page():
     if args.page == None:
-        return render_page('welcome.html')
-    return render_page(args.page)
-
+        return render_template('welcome.html')
+    return render_template(args.page)

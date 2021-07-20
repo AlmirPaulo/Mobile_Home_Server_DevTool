@@ -1,4 +1,4 @@
-# Skeleton Home Server DevTool
+# Skeleton Server DevTool
 *A project by  [Almir Paulo](https://github.com/AlmirPaulo)*
 
 ![logo](https://raw.githubusercontent.com/AlmirPaulo/Mobile_Home_Server_DevTool/main/static/skeleton.png)
@@ -7,6 +7,14 @@ This is a simple CLI to serve a basic web server. This web server is not intende
 
 I know... I know... there are a lot of options out there to do the same. But this one is 100% free, easy and has a lot of features you may like.
 
+## You may use Skeleton Server:
+
+* As a temporary deploy for your app, so you can show it to your partners.
+* As a Flask Boiler Plate.
+* As your home server.
+* As a learn resource for Flask, Python and Backend.
+
+
 <!--## Features
 
 * Deploy of a single page. (Ideally, a temporary deploy)
@@ -14,7 +22,6 @@ I know... I know... there are a lot of options out there to do the same. But thi
 * Jinja2
 * Bootstrap 5 locally installed, to make your Frontend life easier.
 * For advanced usage (like APIs, authentication, etc), you can paste your own backend features on the "myapp.py" file.
-*A tests file for TDD lovers.
 
 ## Dependencies
 
@@ -83,10 +90,12 @@ Buy me a coffee!
 
 ## Plans for the future
 
+* Enable deploy of multiple pages
 * Installation via pip
 * Shell script for installation
 * Include Redis
 * Command for save logs
+* A tests file for TDD lovers.
 * Configure a database panel interface.
 * Make it available for Android 
 

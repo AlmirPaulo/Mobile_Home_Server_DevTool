@@ -1,4 +1,4 @@
-from main import parser, skeleton_db
+from main import parser, skeleton_db, args
 import os
 
 
@@ -21,14 +21,37 @@ class User(db.Model):
 
 Flask-SQLAlchemy documentation: https://flask-sqlalchemy.palletsprojects.com/en/2.x
 '''
-def read():
+#CLI Commands
+parser.add_argument('-r', '--read', type=str, help='Read all database')
+parser.add_argument('-q', '--query', type=str, help='Query some specific data in the database')
+parser.add_argument('-u', '--update', type=str, help='Updates the database')
+parser.add_argument('-d','--delete', type=str, help='Delete some data from the database')
+
+#CRUD Functions
+def read(table):
+   return table.query.all()
+
+def query():
     pass
 
 def update():
-    pass
+    skeleton_db.session.add()
+    skeleton_db.session.commit()
 
 def delete():
+    
+
+#CLI Functions
+def read_command():
+    print(read(args.read))
+
+def query_command():
     pass
+def update_command():
+    pass
+def delete_command():
+    pass
+
 
 def create_db():
     if os.path.exists('./db.sqlite3') == False:
