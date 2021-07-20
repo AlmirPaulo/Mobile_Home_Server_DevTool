@@ -61,13 +61,13 @@ You should see the welcome page at 127.0.0.1:5001.
 ## Commands and Usage
 All the commands are optionals. 
 
-        usage: run.py [-h] [--open OPEN] [--port PORT] [--page PAGE]
+        usage: run.py [-h] [--host HOST] [--port PORT] [--page PAGE]
 
-        A Mobile Webserver for development purposes.
+        A Webserver CLI for development purposes.
 
         optional arguments:
           -h, --help            show this help message and exit
-          --open OPEN, -o OPEN  If you want to host on 0.0.0.0
+          --host HOST           The host where the webserver would run.
           --port PORT           The port where webserver would run
           --page PAGE, -p PAGE  The page to be rendered
 
@@ -101,3 +101,6 @@ Buy me a coffee!
 
 ### 0.0.0 - 07/19/2021 
 First release. 
+
+### 0.1.0 - 07/20/2021
+New way to choose host.
