@@ -15,7 +15,7 @@ I know... I know... there are a lot of options out there to do the same. But thi
 * As a learn resource for Flask, Python and Backend.
 
 
-<!--## Features
+## Features
 
 * Deploy of a single page. (Ideally, a temporary deploy)
 * SQL database included (SQLite3 by default, but you can easily change it).
@@ -28,14 +28,13 @@ I know... I know... there are a lot of options out there to do the same. But thi
 * Python3
 * Flask
 * Flask-SQLAlchemy
-* Pytest
 
 ## Installation 
 > I have plans to automate this whole process in a shell script.
 
 1. Clone this repo.
 2. Make sure you have Python3 installed
-3. Create a virtual environment.
+3. Create a virtual environment (optionally, but recommended).
     
         python3 -m venv venv
 
@@ -45,7 +44,9 @@ I know... I know... there are a lot of options out there to do the same. But thi
 
         pip install -r requirements.txt
 
-> If you have pipenv installed you can of course use the pipenv way of install the requirements instead of steps 4 and 5.
+If you have choosen to skip step 3, paste just the second command, obviously. 
+
+> If you have pipenv installed you can, of course, use the pipenv way of install the requirements instead of steps 4 and 5. 
 
 5. Paste this line on your .bashrc. If you have not a .bashrc file, create it. The following line just create an alias. You can do this with a text editor like "nano" or "vim", or just use "touch" and "echo" commands.
 
@@ -75,18 +76,15 @@ Default host is localhost (127.0.0.1) and default port is 5001.
 In order to run an html page, you just need to place it in the server directory and run the cli with the "--page" option or simply "-p". This server can handle Jinja2 templates and if you need to run static files, place them in the "/static" directory inside the server folder.
 
 
-## F.A.Q.
-### 1. Can I run this on desktop via command line?
-If you have Python installed, yes, but why would you do this?
-
-### 2. I think I found a bug!/I need help! 
+## For bugs 
 Please, open an Issue here on Github. 
 
-### 3. How can I contribute to the project?
+## Contribute
 Pull request me!
 Fork it!
 Tell people about it! 
 Buy me a coffee!
+(button soon!)
 
 ## Plans for the future
 
@@ -101,4 +99,5 @@ Buy me a coffee!
 
 ## Releases
 
-### 0.0.0
+### 0.0.0 - 07/19/2021 
+First release. 
