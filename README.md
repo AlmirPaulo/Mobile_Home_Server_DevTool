@@ -75,7 +75,7 @@ All the commands are optionals.
 
 Default host is localhost (127.0.0.1) and default port is 5001. 
 
-In order to run an html page, you just need to place it in the server directory and run the cli with the "--page" option or simply "-p". This server can handle Jinja2 templates and if you need to run static files, place them in the "/static" directory inside the server folder.
+In order to run an html page, you just need to place it in the templates directory and run the cli with the "--page" option or simply "-p". This server can handle Jinja2 templates and if you need to run static files, place them in the "/static" directory inside the server folder.
 
 
 ## For bugs 
